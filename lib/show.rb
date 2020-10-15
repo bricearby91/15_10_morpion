@@ -2,7 +2,6 @@ class Show
 
 def show_board(board)
 	
-puts board.class
 hash=Hash.new
 
 board.boardcase_array.each do |boardcase|
