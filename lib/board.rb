@@ -15,16 +15,18 @@ class Board
  
   def play_turn(game)
 
+    puts ""
   	puts "A #{game.current_player.name} de jouer !"
+    puts ""
   	puts "Sur quelle case souhaitez-vous déposer un pion ?"
+    puts "Indiquez a, b ou c pour la rangée et 1, 2 ou 3 pour la colonne."
     print "> "
 
   	case_choice = gets.chomp.to_s
-
+    puts ""
 	@boardcase_array.each do |boardcase|
 		if boardcase.id == case_choice
 			boardcase.value = game.current_player.value
-		  puts boardcase.value
     end
 	end
     #TO DO : une méthode qui :

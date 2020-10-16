@@ -42,6 +42,7 @@ class Game
 
     @number_of_turns += 1
 
+    puts ""
     if board.victory?(game)
       puts "#{current_player.name} remporte ce match ! Bravo à lui !"
       game_end(board)
